@@ -8,8 +8,6 @@ namespace FirstProgram
     {
         static void Main(string[] args)
         {
-            int count = 0;
-            int cnt = 1;
             while(true)
             {
                 string input = ReadLine();
