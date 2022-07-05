@@ -1,5 +1,5 @@
 using System;
-using System.Numerics;
+using static System.Console;
 
 
 
@@ -9,8 +9,15 @@ namespace FirstProgram
     {
         static void Main(string[] args)
         {
-            BigInteger a = BigInteger.Parse(Console.ReadLine()) % 20000303;
-            Console.WriteLine(a);
+            string str = ReadLine();
+            int value = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                value = (value * 10 + (str[i] - '0')) % 20000303;
+            }
+
+            WriteLine(value);
         }
     }
 }
